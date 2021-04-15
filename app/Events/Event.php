@@ -38,12 +38,10 @@ class Event
     }
     public function handle(ProductDetail $pView)
     {
-        if (!$this->isPostViewed($pView))
-        {
+        if (!$this->isPostViewed($pView)) {
             $pView->increment('view');
             $this->storePost($pView);
         }
-       
     }
     private function isPostViewed($pView)
     {

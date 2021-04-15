@@ -1,29 +1,31 @@
 @extends('master')
 @section('content')
 <ul class="breadcrumb">
-	<li>
-		<i class="icon-home"></i>
-		<a href="{{ url ('/')}}">Trang chủ</a> 
-		<i class="icon-angle-right"></i>
-	</li>
-	<li><a href="#">Dashboard</a></li>
+  <li>
+    <i class="icon-home"></i>
+    <a href="{{ url ('/')}}">Trang chủ</a>
+    <i class="icon-angle-right"></i>
+  </li>
+  <li><a href="#">Dashboard</a></li>
 </ul>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/css/bootstrap-select.min.css">
- <div class="row">
-       <div class="col-md-10 col-md-offset-1">
-           <div class="panel panel-default">
-               <div class="panel-body" style="margin-left: 20px">
-                   <canvas id="canvas" height="280" width="600"></canvas>
-               </div>
-           </div>
-       </div>
-     </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/js/bootstrap-select.min.js" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js" charset="utf-8"></script>
-        <script>
-        var url = "{{url('admin/pages/survey/chart')}}";
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/css/bootstrap-select.min.css">
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="panel panel-default">
+      <div class="panel-body" style="margin-left: 20px">
+        <canvas id="canvas" height="280" width="600"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/js/bootstrap-select.min.js" charset="utf-8">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js" charset="utf-8"></script>
+<script>
+  var url = "{{url('admin/pages/survey/chart')}}";
         var Years = new Array();
         var Labels = new Array();
         var Prices = new Array();
@@ -77,5 +79,5 @@
               });
           });
         });
-      </script>
+</script>
 @endsection

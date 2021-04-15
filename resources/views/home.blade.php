@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +20,15 @@
 	<link rel="stylesheet" href="sources/assets/dest/css/owl.carousel2.css">
 	<link rel="stylesheet" href="sources/assets/dest/css/owl.theme.default.css">
 </head>
+
 <body>
 	@include('pages.header')
-	 <!-- #header -->
+	<!-- #header -->
 	<div class="rev-slider">
 		@yield('content')
 	</div> <!-- .container -->
 	@include('pages.footer')
-	 <!--.footer-->
+	<!--.footer-->
 	<!-- include js files -->
 	<script src="sources/assets/dest/js/jquery.js"></script>
 	<script src="sources/assets/dest/vendors/jqueryui/jquery-ui-1.10.4.custom.min.js"></script>
@@ -46,7 +48,7 @@
 	<script src="sources/assets/dest/js/owl.carousel.js"></script>
 	<script src="sources/assets/dest/js/app.js"></script>
 	<script>
-	$(document).ready(function($) {    
+		$(document).ready(function($) {    
 		$(window).scroll(function(){
 			if($(this).scrollTop()>150){
 			$(".header-bottom").addClass('fixNav')
@@ -67,4 +69,5 @@
 	}(document, 'script', 'facebook-jssdk'));
 	</script>
 </body>
+
 </html>
